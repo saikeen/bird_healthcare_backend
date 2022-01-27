@@ -1,0 +1,24 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see Rails configuration guide
+  # https://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  # added setting
+  host: db
+  username: root
+  password: password
+
+development:
+  <<: *default
+  database: bird_healthcare_backend_dev
+
+test:
+  <<: *default
+  database: bird_healthcare_backend_test
+
+production:
+  <<: *default
+  database: bird_healthcare_backend_prod
+  # username: app
+  # password: <%= ENV['APP_DATABASE_PASSWORD'] %>
