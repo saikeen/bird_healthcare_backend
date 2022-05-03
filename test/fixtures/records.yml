@@ -1,19 +1,19 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  bird: one
-  date: 2022-02-03
-  body_weight: 1.5
-  food_weight: 1.5
-  weather: MyString
-  room_temperature: 1.5
+  date: 2022-05-03
+  meal_weight_g: 9.99
+  body_weight_g: 9.99
+  weather: 1
+  room_temperature_c: 9.99
   note: MyText
+  birds: one
 
 two:
-  bird: two
-  date: 2022-02-03
-  body_weight: 1.5
-  food_weight: 1.5
-  weather: MyString
-  room_temperature: 1.5
+  date: 2022-05-03
+  meal_weight_g: 9.99
+  body_weight_g: 9.99
+  weather: 1
+  room_temperature_c: 9.99
   note: MyText
+  birds: two
